@@ -1,4 +1,4 @@
-ansible-profiles-plugin
+Ansible Profiles Plugin
 =======================
 
-Hierarchical variables management plugin for Ansible
+Hierarchical variables management plugin for Ansible.
