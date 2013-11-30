@@ -114,7 +114,7 @@ author: StarCompany
 
 ## Installation
 
-Copy `profiles.py` file to `vars_plugins` folder near your root playbook:
+Copy `profiles.py` file to `vars_plugins` folder near your root playbooks:
 
 ```
 [group_vars]
@@ -125,3 +125,13 @@ Copy `profiles.py` file to `vars_plugins` folder near your root playbook:
 hosts
 playbook.yml
 ```
+
+Turn on profile by either creating `.profile` file near your root playbooks with 
+the following content:
+
+    profile: relative/path/to/your/profile
+    
+or set `ANSIBLE_PROFILE` environment profile:
+
+    exports ANSIBLE_PROFILE=relative/path/to/your/profile
+   
