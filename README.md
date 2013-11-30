@@ -45,16 +45,19 @@ It defines several profiles, for instance:
 
 There are two ways to select profile. 
 
-Create `.profile` file in the same folder, where your `profiles` folder is located with this content:
+Create `.profile` file in the same folder, where your `profiles` folder is located with the 
+following content:
 
 ```
-profile: production/datacenter`
+profile: production/datacenter1`
 ```
+
+This file should be marked as ignored for your SCM tool (git, svn etc.).
 
 Or set environment variable `ANSIBLE_PROFILE`:
 
 ```
-exports ANSIBLE_PROFILE=production/datacenter
+exports ANSIBLE_PROFILE=production/datacenter1
 ```
 
 If you have specified `ANSIBLE_PROFILE` environment variable, than `.profile` file will be ignored.
@@ -93,8 +96,21 @@ host: roothost.com
 author: StarCompany
 ```
 
-Profile `local` will have ...
+Profile `local` will be:
 
+```
+db_port: 5000
+host: localhost
+author: StarCompany
+```
+
+Profile `local/john` will be:
+
+```
+db_port: 6000
+host: johnhost.org
+author: StarCompany
+```
 
 ## Installation
 
