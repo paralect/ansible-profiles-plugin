@@ -6,7 +6,7 @@ Hierarchical variables management plugin for Ansible.
 
 Ansible uses two folders to manage variables: `host_vars` and `group_vars`. This plugin uses additional folder, `profiles`, which may consists of unlimited hierarchy of folders to represent profiles. There is only one file inside each profile directory: `vars.yml`. 
 
-Here is a possible structure of folders:
+Here is a possible structure of `profiles` folder:
 
 ```
 [profiles]
@@ -31,5 +31,14 @@ Here is a possible structure of folders:
    ...
    vars.yml
 ```
+
+It defines several profiles, for instance:
+
+1. `production`
+2. `production/datacenter1`
+3. `local`
+4. `local/john`
+5. _root_ profile (represented by empty string: `""`)
+6. ...
 
 
