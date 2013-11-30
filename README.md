@@ -1,10 +1,10 @@
 # Ansible Profiles Plugin
 
-Hierarchical variables management plugin for Ansible.
+Profiles management plugin for Ansible.
 
 ## About
 
-Ansible uses two folders to manage variables: `host_vars` and `group_vars`. This plugin uses additional folder, `profiles`, which may consists of unlimited hierarchy of folders to represent profiles. There is only one file inside each profile directory: `vars.yml`. Child profiles always overwrite variables from parent variables. We will show how it works soon.
+Ansible uses two folders to manage variables: `host_vars` and `group_vars`. This plugin uses additional folder, `profiles`, which may consists of unlimited hierarchy of folders to represent profiles. There is only one file inside each profile directory: `vars.yml`. Child profiles always overwrite variables from parent profile. We will show how it works soon.
 
 Here is a possible structure of `profiles` folder:
 
