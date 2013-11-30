@@ -60,7 +60,7 @@ Or set environment variable `ANSIBLE_PROFILE`:
 exports ANSIBLE_PROFILE=production/datacenter1
 ```
 
-If you have specified `ANSIBLE_PROFILE` environment variable, than `.profile` file will be ignored.
+If you have specified `ANSIBLE_PROFILE` environment variable, then `.profile` file will be ignored.
 
 
 ## Example
