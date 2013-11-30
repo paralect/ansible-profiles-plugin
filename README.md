@@ -135,3 +135,5 @@ or set `ANSIBLE_PROFILE` environment profile:
 
     exports ANSIBLE_PROFILE=relative/path/to/your/profile
    
+You also can install this plugin globally, by coping `profiles.py` to the ansible `vars_plugins` folder. In order to find the path to `vars_plugins` folder refer to `ansible.cfg` (location of this file is specific to your distribution, on Ubuntu it is located in `/etc/ansible/ansible.cfg` and/or `~/.ansible.cfg`
+
