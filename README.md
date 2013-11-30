@@ -49,7 +49,7 @@ Create `.profile` file in the same folder, where your `profiles` folder is locat
 following content:
 
 ```
-profile: production/datacenter1`
+profile: production/datacenter1
 ```
 
 This file should be marked as ignored for your SCM tool (git, svn etc.).
