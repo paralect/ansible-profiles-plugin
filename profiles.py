@@ -168,7 +168,10 @@ class VarsModule(object):
             
             vars_path = os.path.join(current_path, "vars.yml")
             
-            if os.path.exists(vars_path) and not os.path.isdir(vars_path):
+            if (os.path.exists(vars_path) and 
+                os.path.isfile(vars_path) and
+                os.stat(vars_path).st_size != 0):            
+            
                 data = utils.parse_yaml_from_file(vars_path)
                 if type(data) != dict:
                     raise errors.AnsibleError("%s must be stored as a dictionary/hash" % vars_path)            
