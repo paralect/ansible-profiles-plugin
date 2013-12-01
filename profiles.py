@@ -119,9 +119,6 @@ class VarsModule(object):
 
                 config = data
         
-        if not config:
-            return None
-        
         return self.sanitize_config(config)
 
     
